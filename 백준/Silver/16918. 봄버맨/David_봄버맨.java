@@ -29,9 +29,9 @@ public class Main {
             String str = br.readLine();
             for (int c = 0; c < C; c++) {
                 map[r][c] = str.charAt(c);
-                if (map[r][c] == 'O') {
-                    time[r][c] = 1;
-                }
+//                if (map[r][c] == 'O') {
+//                    time[r][c] = 1;
+//                }
             }
         }
         // 1초부터 시작해서 N초 까지 반복
@@ -68,7 +68,7 @@ public class Main {
             for (int c = 0; c < C; c++) {
                 if (map[r][c] == '.') {
                     map[r][c] = 'O';
-                    time[r][c] = 1;
+                    time[r][c] = 0;
                 }
             }
         }
@@ -77,14 +77,14 @@ public class Main {
     private static void explode() {
         for (int r = 0; r < R; r++) {
             for (int c = 0; c < C; c++) {
-                if (time[r][c] == 4) {
+                if (time[r][c] == 3) {
                     map[r][c] = '.';
                     time[r][c] = 0;
                     for (int d = 0; d < 4; d++) {
                         int nr = r + dr[d];
                         int nc = c + dc[d];
 
-                        if (nr >= 0 && nc >= 0 && nr < R && nc < C && time[nr][nc] != 4) {
+                        if (nr >= 0 && nc >= 0 && nr < R && nc < C && time[nr][nc] != 3) {
                             map[nr][nc] = '.';
                             time[nr][nc] = 0;
                         }
