@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 12272 KB, 시간: 104 ms
+메모리: 11672 KB, 시간: 84 ms
 
 ### 분류
 
@@ -14,7 +14,7 @@
 
 <p>가로 A(1≤A≤100), 세로 B(1≤B≤100) 크기의 땅이 있다. 이 땅 위에 로봇들이 N(1≤N≤100)개 있다.</p>
 
-<p style="text-align: center;"><img alt="" height="279" src="" width="516"></p>
+<p style="text-align: center;"><img alt="" height="279" src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/upload/201008/robot.PNG" width="516"></p>
 
 <p>로봇들의 초기 위치는 x좌표와 y좌표로 나타난다. 위의 그림에서 보듯 x좌표는 왼쪽부터, y좌표는 아래쪽부터 순서가 매겨진다. 또한 각 로봇은 맨 처음에 NWES 중 하나의 방향을 향해 서 있다. 초기에 서 있는 로봇들의 위치는 서로 다르다.</p>
 
